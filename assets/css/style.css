@@ -30,6 +30,12 @@ body {
     float: left;
 }
 
+#littleguytxt pre{
+    font-size: 25px;
+    margin: 0px;
+    margin-left: 40px;
+}
+
 #score {
     width: 40%;
     height: 24%;
@@ -75,6 +81,12 @@ body {
 	background-color: #07ff11;
 	color: black;
 	border: 2px dashed black;
+	cursor: pointer;
+}
+
+#states:active {
+	border:2px dashed white;
+	color: white;
 }
 
 #statetxt {
@@ -94,6 +106,12 @@ body {
 	background-color: #07ff11;
 	color: black;
 	border: 2px dashed black;
+	cursor: pointer;
+}
+
+#countries:active {
+	border:2px dashed white;
+	color: white;
 }
 
 #countrytxt {
@@ -101,7 +119,7 @@ body {
 }
 
 #famous {
-    width: 95px;
+    width: 134px;
     height: 30px;
     border: 2px dashed;
     margin-left: 12px;
@@ -112,6 +130,12 @@ body {
 	background-color: #07ff11;
 	color: black;
 	border: 2px dashed black;
+	cursor: pointer;
+}
+
+#famous:active {
+	border:2px dashed white;
+	color: white;
 }
 
 #famoustxt {
@@ -123,6 +147,12 @@ body {
     height: 15%;
     border-bottom: 3px dashed;
     clear: both;
+    text-align: center;
+}
+
+#answertxt {
+    padding-top: 30px;
+    letter-spacing: 3px;
 }
 
 #guesses {
@@ -131,7 +161,18 @@ body {
     border-bottom: 3px dashed;
 }
 
+#guesstxt {
+    padding: 7px;
+}
+
 #keys {
     width: 100%;
     height: 23%;
+}
+
+#keypad {
+    text-align: center;
+    padding: 29px;
+    letter-spacing: 3px;
+    font-size: 20px;
 }
