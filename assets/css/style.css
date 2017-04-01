@@ -142,6 +142,31 @@ body {
 	margin-top: 7px;
 }
 
+#allbtn {
+	width: 55px;
+    height: 30px;
+    border: 2px dashed;
+    float: right;
+    margin-right: 12px;
+	margin-top: -33px;
+}
+
+#allbtn:hover {
+	background-color: #07ff11;
+	color: black;
+	border: 2px dashed black;
+	cursor: pointer;
+}
+
+#allbtn:active {
+	border:2px dashed white;
+	color: white;
+}
+
+#allbtntxt {
+	margin-top: 7px;
+}
+
 #answer {
     width: 100%;
     height: 15%;
