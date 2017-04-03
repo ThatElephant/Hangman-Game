@@ -3,6 +3,14 @@ body {
 	color: #07ff11;
 	font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
 	font-weight: 900;
+    cursor: default;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 #hangmantitle {
@@ -34,6 +42,42 @@ body {
     font-size: 25px;
     margin: 0px;
     margin-left: 40px;
+}
+
+#hangmanchar {
+    position: fixed;
+    top: 286px;
+    font-size: 25px;
+    margin-left: 202px;
+}
+
+#hangmanchar2 {
+    text-align: center;
+}
+
+#hangmanchar3 {
+    text-align: center;
+}
+
+#hangmanchar4 {
+    margin-left: 1px;
+    float: left;
+    margin-top: -52px;
+}
+
+#hangmanchar5 {
+    margin-left: 1px;
+    float: right;
+    margin-top: -52px;
+}
+
+#hangmanchar6 {
+    float: left;
+}
+
+#hangmanchar7 {
+    float: right;
+    margin-left: -18px;
 }
 
 #score {
@@ -70,7 +114,7 @@ body {
 }
 
 #states {
-    width: 95px;
+    width: 80px;
     height: 30px;
     border: 2px dashed;
     margin-left: 12px;
@@ -94,7 +138,7 @@ body {
 }
 
 #countries {
-    width: 95px;
+    width: 110px;
     height: 30px;
     border: 2px dashed;
     float: right;
@@ -118,7 +162,7 @@ body {
 	margin-top: 7px;
 }
 
-#famous {
+#continents {
     width: 134px;
     height: 30px;
     border: 2px dashed;
@@ -126,19 +170,19 @@ body {
     margin-top: 15px;
 }
 
-#famous:hover {
+#continents:hover {
 	background-color: #07ff11;
 	color: black;
 	border: 2px dashed black;
 	cursor: pointer;
 }
 
-#famous:active {
+#continents:active {
 	border:2px dashed white;
 	color: white;
 }
 
-#famoustxt {
+#continenttxt {
 	margin-top: 7px;
 }
 
@@ -187,8 +231,11 @@ body {
 }
 
 #guesstxt {
-    padding: 7px;
+    padding: 17px;
+    text-align: center;
 }
+
+
 
 #keys {
     width: 100%;
