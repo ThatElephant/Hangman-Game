@@ -54,9 +54,9 @@ _____|______
 				Keystrokes:
 			</div>
 			<div id="scorenumbers">
-				0<br><br>
-				0<br><br>
-				0
+				<span id="wins">0</span><br><br>
+				<span id="losses">0</span><br><br>
+				<span id="keystrokes">0</span>
 			</div>
 		</div>
 
@@ -101,6 +101,10 @@ var countriesList = ['Afghanistan',  'Albania', 'Algeria', 'Andorra', 'Angola', 
 var continentList = ['Africa', 'Antarctica', 'Asia', 'Australia', 'Europe', 'Kenorland', 'North-America', 'Oceania', 'Pangaea',  'South-America'];
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
+var wins = 0;
+var losses = 0;
+var keyStrokes = 0;
+
  function clickStates() {
  		console.log("User Clicked States.");
 
@@ -125,7 +129,6 @@ var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
       guess.setAttribute("class", "guess");
       if (statesWord[i] === "-") {
         guess.innerHTML = "-";
-        space = 1;
       } else {
         guess.innerHTML = "_";
       }
@@ -146,7 +149,19 @@ var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
 
 
  		console.log("-------------------------");
+
+ 	document.onkeyup = function(event) {
+ 		var input = event.key.toLowerCase();
+ 		console.log("User pressed: " + input);
+
+
+ 	document.getElementById("keystrokes").innerHTML = keyStrokes;
+ 		keyStrokes++;
+
+ 	
+ 	}
  }
+
 
 
 

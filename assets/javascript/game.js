@@ -1,22 +1,26 @@
-/*	1-Start
-		new word
-		hangman clears
-		answer space fixes to correct length
-	2-play
-		user pushes key
-			log it
-			highlight which key was pressed
-			change guesses +1
-			add key to either letter guessed or correct position
-			if wrong add hangman part
-	3-game
-		if win add point 
-		if loss add point 
-		new word
-		reset hangman
-		reset highlighted keys
+/*	user presses keystroke
+		can only be pressed once
+		only a-z
+	if correct 
+		fix answer space
+		add keystroke
+		keyboard key will light up green background
+	if wrong
+		add part of hangman
+		guesses left goes down by 1
+		add keystroke
+		keyboard key will light up orange
 
-I need:
-	array for keys
-	array for words
-etc. */
+	if guess entire word
+		add 1 to win
+	if loses 
+		add 1 to loss
+
+	end of round 
+		press space for new word
+		or
+		click new game-type
+			make sure everything resets except scoreboard.
+
+	Need to work in the 3 other buttons
+		possibly get them all into a if statement?
