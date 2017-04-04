@@ -224,6 +224,32 @@ body {
     letter-spacing: 3px;
 }
 
+#my-word {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    float: initial;
+    letter-spacing: 7px;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+li.guess {
+    display: inline-block;
+}
+
+#answerbracket1 {
+    display: none;
+}
+
+#answerbracket2 {
+    display: none;
+}
+
+#container {
+    display: none;
+}
+
 #guesses {
     width: 100%;
     height: 10%;
@@ -235,7 +261,18 @@ body {
     text-align: center;
 }
 
+#wrongguess {
+    display: none;
+    position: relative;
+    top: 15px;
+    left: 75px;
+}
 
+#guessmenu2 {
+    padding: 17px;
+    text-align: center;
+    display: none;
+}
 
 #keys {
     width: 100%;
